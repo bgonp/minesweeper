@@ -1,0 +1,108 @@
+#buscaminas {
+    text-align: center;
+}
+#buscaminas .mensaje {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1;
+    margin: 40px;
+    color: #777;
+}
+#buscaminas .tablero {
+    position: relative;
+    display: inline-block;
+    padding: 25px;
+    font-size: 0;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    white-space: nowrap;
+}
+#buscaminas .tablero .boton-nivel {
+    display: block;
+    background: #E7E7E7;
+    border: 1px solid #E0E0E0;
+    margin: 10px;
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 15px 35px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #777;
+}
+#buscaminas .tablero .boton-reiniciar {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    padding: 5px 15px;;
+    font-size: 16px;
+    color: #999;
+}
+#buscaminas .tablero .casilla {
+    display: inline-block;
+    background: #E7E7E7;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    box-shadow: inset 3px 3px 2px rgba(255,255,255,0.3), inset -3px -3px 2px rgba(0,0,0,0.01);
+    transition: all 0.2s ease;
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 30px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #777;
+}
+#buscaminas .tablero .casilla.descubierta {
+    background: #F8F8F8;
+    box-shadow: none;
+}
+#buscaminas .tablero .casilla.descubierta.amenazas-1 {
+    color: #257fe6;
+}
+#buscaminas .tablero .casilla.descubierta.amenazas-2 {
+    color: #bc25e6;
+}
+#buscaminas .tablero .casilla.descubierta.amenazas-3 {
+    color: #e62525;
+}
+#buscaminas .tablero .casilla.descubierta.amenazas-4 {
+    color: #e6a725;
+}
+#buscaminas .tablero .casilla.descubierta.amenazas-5 {
+    color: #42d42c;
+}
+#buscaminas .tablero .casilla.descubierta.amenazas-6 {
+    color: #1dbfcc;
+}
+#buscaminas .tablero .casilla.descubierta.amenazas-7 {
+    color: #c3a700;
+}
+#buscaminas .tablero .casilla.descubierta.amenazas-8 {
+    color: #444444;
+}
+#buscaminas .tablero .casilla:hover {
+    background: #F0F0F0;
+}
+#buscaminas .tablero .casilla:active {
+    box-shadow: inset -3px -3px 2px rgba(255,255,255,0.3), inset 3px 3px 2px rgba(0,0,0,0.01);
+}
+#buscaminas .tablero .casilla .fas {
+    display: none;
+    font-size: 16px;
+    line-height: 30px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+#buscaminas .tablero .casilla.marcada .fas.fa-flag {
+    display: block;
+    color: #b73838;
+}
+#buscaminas .tablero .casilla.mina .fas.fa-bomb {
+    display: block;
+    color: #ff0f0f;
+}
